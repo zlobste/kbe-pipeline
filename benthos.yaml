@@ -1,0 +1,16 @@
+input:
+  label: "kafka"
+  kafka:
+    addresses:
+      - kafka:9094
+    topics:
+      - "kbe-topic"
+    consumer_group: "main"
+
+output:
+  label: "elastic"
+  elasticsearch:
+    urls:
+      - http://elasticsearch:9200
+    index: "kbe-index"
+
